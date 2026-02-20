@@ -372,4 +372,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Change navigation color based on scroll position
+    function updateNavColor() {
+        const aboutSection = document.getElementById('about');
+        const navLinks = document.querySelectorAll('.hero-nav-link');
+
+        if (aboutSection) {
+            const aboutRect = aboutSection.getBoundingClientRect();
+            const navTop = 48; // 3rem top position
+
+            // Check if nav is over the about section (cream background)
+            if (aboutRect.top <= navTop && aboutRect.bottom >= navTop) {
+                navLinks.forEach(link => link.classList.add('dark-text'));
+            } else {
+                navLinks.forEach(link => link.classList.remove('dark-text'));
+            }
+        }
+    }
+
+    // Update on scroll
+    window.addEventListener('scroll', updateNavColor);
+    // Initial check
+    updateNavColor();
 });
