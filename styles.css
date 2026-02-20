@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
     --color-burgundy: #5e1210;
-    --color-cream: #f2ead8;
+    --color-cream: #edebde;
     --color-dark-brown: #2a1810;
 }
 
@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 400px;
     height: auto;
     margin-bottom: 0;
-    filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(444%) hue-rotate(328deg) brightness(103%) contrast(92%);
-    /* Filter converts logo to cream color (#f2ead8) for accessibility */
+    filter: brightness(0) saturate(100%) invert(93%) sepia(8%) saturate(450%) hue-rotate(10deg) brightness(102%) contrast(95%);
+    /* Filter converts logo to cream color (#edebde) for accessibility */
 }
 
 .hero-subtitle {
@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(242, 234, 216, 0.3);
+    border-bottom: 1px solid rgba(237, 235, 222, 0.3);
     color: var(--color-cream);
     font-size: 1rem;
     font-family: 'Darline', serif;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-input::placeholder {
-    color: rgba(242, 234, 216, 0.4);
+    color: rgba(237, 235, 222, 0.4);
     text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 0.9rem;
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 .cocktail-item {
     text-align: left;
     padding: 0;
-    border-bottom: 1px solid rgba(242, 234, 216, 0.1);
+    border-bottom: 1px solid rgba(237, 235, 222, 0.1);
     padding-bottom: 2rem;
 }
 
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cocktail-ingredients {
     font-size: 0.8rem;
-    color: rgba(242, 234, 216, 0.6);
+    color: rgba(237, 235, 222, 0.6);
     line-height: 1.6;
     letter-spacing: 0.5px;
     text-transform: none;
@@ -284,11 +284,11 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--color-burgundy);
     padding: 3rem 4rem;
     text-align: center;
-    border-top: 1px solid rgba(242, 234, 216, 0.1);
+    border-top: 1px solid rgba(237, 235, 222, 0.1);
 }
 
 .footer p {
-    color: rgba(242, 234, 216, 0.5);
+    color: rgba(237, 235, 222, 0.5);
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
