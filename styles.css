@@ -1,0 +1,437 @@
+/* Color Palette */
+:root {
+    --color-burgundy: #5e1210;
+    --color-cream: #f2ead8;
+    --color-dark-brown: #2a1810;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Darline', serif;
+    background-color: var(--color-burgundy);
+    color: var(--color-cream);
+    line-height: 1.6;
+}
+
+/* Headers use Darline Script */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Darline Script', 'Darline', serif;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-burgundy);
+    z-index: 1000;
+    padding: 2rem 0;
+    transition: padding 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link {
+    color: var(--color-cream);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 0;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(12%) saturate(444%) hue-rotate(328deg) brightness(103%) contrast(92%);
+    /* Filter converts logo to cream color (#f2ead8) for accessibility */
+}
+
+.hero-subtitle {
+    font-family: 'Darline', serif;
+    font-size: 0.85rem;
+    color: var(--color-cream);
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    width: 400px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* About Section */
+.about {
+    background-color: var(--color-cream);
+    padding: 8rem 4rem;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: var(--color-burgundy);
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Menu Section */
+.menu {
+    background-color: var(--color-burgundy);
+    padding: 8rem 4rem;
+    min-height: 100vh;
+}
+
+.menu-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-title {
+    font-family: 'Darline Script', 'Darline', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-cream);
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+}
+
+/* Search Bar */
+.search-container {
+    max-width: 350px;
+    margin: 0 0 6rem 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(242, 234, 216, 0.3);
+    color: var(--color-cream);
+    font-size: 1rem;
+    font-family: 'Darline', serif;
+    text-align: left;
+    letter-spacing: 1px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-cream);
+}
+
+.search-input::placeholder {
+    color: rgba(242, 234, 216, 0.4);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* Cocktails List */
+.cocktails-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-section {
+    margin-bottom: 6rem;
+}
+
+.category-header {
+    font-family: 'Darline Script', 'Darline', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-cream);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    text-align: left;
+    opacity: 0.7;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+    grid-column: 1 / -1;
+}
+
+.category-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 3rem;
+}
+
+.cocktail-item {
+    text-align: left;
+    padding: 0;
+    border-bottom: 1px solid rgba(242, 234, 216, 0.1);
+    padding-bottom: 2rem;
+}
+
+.cocktail-name {
+    font-family: 'Darline', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-cream);
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+}
+
+.cocktail-ingredients {
+    font-size: 0.8rem;
+    color: rgba(242, 234, 216, 0.6);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-burgundy);
+    padding: 3rem 4rem;
+    text-align: center;
+    border-top: 1px solid rgba(242, 234, 216, 0.1);
+}
+
+.footer p {
+    color: rgba(242, 234, 216, 0.5);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .category-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-logo {
+        width: 350px;
+    }
+
+    .hero-subtitle {
+        width: 350px;
+    }
+
+    .about {
+        padding: 6rem 3rem;
+    }
+
+    .about-container {
+        gap: 3rem;
+    }
+
+    .menu {
+        padding: 6rem 3rem;
+    }
+
+    .menu-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 2rem;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .hero-logo {
+        width: 280px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        width: 280px;
+        letter-spacing: 0.35em;
+    }
+
+    .about {
+        padding: 4rem 2rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .menu {
+        padding: 4rem 2rem;
+    }
+
+    .menu-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .category-items {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .cocktail-name {
+        font-size: 1.5rem;
+    }
+
+    .cocktail-ingredients {
+        font-size: 0.8rem;
+    }
+
+    .category-header {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .cocktail-item {
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        width: 220px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        width: 220px;
+        letter-spacing: 0.35em;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .cocktail-name {
+        font-size: 1.3rem;
+    }
+
+    .cocktail-ingredients {
+        font-size: 0.75rem;
+    }
+}
