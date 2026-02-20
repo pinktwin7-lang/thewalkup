@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .category-header {
     font-family: 'Darline Script', 'Darline', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: var(--color-cream);
     text-transform: capitalize;
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cocktail-name {
     font-family: 'Darline', serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--color-cream);
     margin-bottom: 0.75rem;
@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .cocktail-name {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .cocktail-ingredients {
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .category-header {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         letter-spacing: 1px;
     }
 
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .cocktail-name {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .cocktail-ingredients {
